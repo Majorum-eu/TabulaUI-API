@@ -36,24 +36,46 @@ dependencies {
 ## Implementing 
 Implementing TabulaUI API is easy!
 
+**Form List menu**
 ```java
-package com.example.plugin;
-
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
-import org.bukkit.plugin.RegisteredServiceProvider;
-import org.bukkit.plugin.java.JavaPlugin;
-
-public class ExamplePlugin extends JavaPlugin {
-
-    @Override
-    public void onDisable() {
-    }
-
-    @Override
-    public void onEnable() {
-    }
-    
-}
+FormList.Builder builder = TabulaAPI.INSTANCE.createList()
+        .title("§6Example")
+        .content("§7This is an example of a list");
+builder.button("§7This is a button", floodgatePlayer -> {
+    // Response: Do something
+});
+builder.button("§7This is another button", floodgatePlayer -> {
+    // Response: Do something
+}, floodgatePlayer -> {
+    // Condition to view the button
+    return floodgatePlayer.getDeviceOs() == DeviceOs.GOOGLE
+});
+```
+**Form Custom menu**
+```java
+FormCustom.Builder builder = TabulaAPI.INSTANCE.createCustom()
+        .title("§6Example")
+        .icon(TabulaAPI.INSTANCE.getFormImage("https://example.com/image.png"))
+        .label("§7This is an example of a custom form");
+builder.dropDown("§7This is a drop down", 0, Arrays.asList("§7Option 1", "§7Option 2", "§7Option 3"), floodgatePlayer -> {
+    // Condition to view the button
+    return floodgatePlayer.getDeviceOs() == DeviceOs.GOOGLE;
+}, (floodgatePlayer, value) -> {
+    // Response: Do something
+});
+builder.input("Demand", null, null, null, (floodgatePlayer, value) -> {
+    // Response: Do something
+});
+```
+**Form Info menu**
+```java
+FormInfo.Builder builder = TabulaAPI.INSTANCE.createInfo()
+        .title("§6Example")
+        .content("§7This is an example of an info form");
+builder.trueButton("§7This is a button", floodgatePlayer -> {
+    // Response: Do something
+});
+builder.falseButton("§7This is another button", floodgatePlayer -> {
+    // Response: Do something
+});
 ```
