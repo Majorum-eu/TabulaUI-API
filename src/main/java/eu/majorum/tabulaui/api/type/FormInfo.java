@@ -1,10 +1,9 @@
 package eu.majorum.tabulaui.api.type;
 
 import eu.majorum.tabulaui.api.component.ButtonComponent;
-import org.bukkit.entity.Player;
 import org.geysermc.cumulus.form.ModalForm;
-
 import org.geysermc.floodgate.api.player.FloodgatePlayer;
+
 import java.util.function.Consumer;
 
 //INFO == MODAL

@@ -5,16 +5,13 @@ import eu.majorum.tabulaui.api.type.Form;
 import eu.majorum.tabulaui.api.type.FormCustom;
 import eu.majorum.tabulaui.api.type.FormInfo;
 import eu.majorum.tabulaui.api.type.FormList;
-import org.bukkit.entity.Player;
 import org.geysermc.cumulus.util.FormImage;
-import org.geysermc.floodgate.api.FloodgateApi;
 
 import java.util.UUID;
-import java.util.function.Consumer;
 
 public interface TabulaAPI {
 
-    TabulaAPI INSTANCE = new eu.majorum.tabulaui.internal.TabulaAPI();
+    TabulaAPI INSTANCE = null;
 
     FormImage getFormImage(String data);
 

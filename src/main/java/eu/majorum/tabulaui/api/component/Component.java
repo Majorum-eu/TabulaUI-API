@@ -1,9 +1,7 @@
 package eu.majorum.tabulaui.api.component;
 
-import org.bukkit.entity.Player;
 import org.geysermc.floodgate.api.player.FloodgatePlayer;
 
-import org.geysermc.floodgate.api.player.FloodgatePlayer;
 import java.util.function.Predicate;
 
 public interface Component extends Cloneable {

@@ -1,13 +1,11 @@
 package eu.majorum.tabulaui.api.type;
 
 import eu.majorum.tabulaui.api.component.typed.ComponentTyped;
-import org.bukkit.entity.Player;
 import org.geysermc.cumulus.form.CustomForm;
-import org.geysermc.cumulus.response.CustomFormResponse;
 import org.geysermc.cumulus.util.FormImage;
+import org.geysermc.floodgate.api.player.FloodgatePlayer;
 
 import java.util.List;
-import org.geysermc.floodgate.api.player.FloodgatePlayer;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
 

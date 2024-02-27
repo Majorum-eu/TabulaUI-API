@@ -1,5 +1,7 @@
 package eu.majorum.tabulaui.api.type;
+
 import org.geysermc.floodgate.api.player.FloodgatePlayer;
+
 import java.util.function.BiFunction;
 
 public interface Form {
