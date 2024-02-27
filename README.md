@@ -16,7 +16,7 @@ How to include the API with Maven:
     <dependency>
         <groupId>com.github.Majorum-eu</groupId>
         <artifactId>TabulaUI-API</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
@@ -28,7 +28,7 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 dependencies {
-    implementation 'com.github.Majorum-eu:TabulaUI-API:1.0.0'
+    implementation 'com.github.Majorum-eu:TabulaUI-API:1.1.0'
 }
 ```
 
